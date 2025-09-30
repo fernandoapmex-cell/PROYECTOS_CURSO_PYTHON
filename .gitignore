@@ -1,0 +1,20 @@
+# Carpetas de configuración de IDEs
+.idea/
+.vscode/
+
+# Entornos virtuales
+venv/
+.env/
+.venv/
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de logs
+*.log
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
