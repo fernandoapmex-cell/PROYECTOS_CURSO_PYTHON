@@ -1,5 +1,5 @@
 #buscar subcadenas
-cadena='Hola, Mundo!'
+cadena='Hola, Mundo!..'
 indice= cadena.find('Mundo')
 print(indice)
 
