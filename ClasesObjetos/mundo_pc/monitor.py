@@ -12,5 +12,5 @@ class Monitor:
 if __name__ == '__main__':
     monitor1=Monitor('hp',27)
     print(monitor1)
-
-
+    monitor2= Monitor('dell',28.6)
+    print(monitor2)
