@@ -1,6 +1,6 @@
 import logging as log
 
-log.basicConfig(level=log.DEBUG,format='%(asctime)s - %(name)s - %(levelname)s [%(filename)s:%(lineno)s] - %(message)s',
+log.basicConfig(level=log.INFO,format='%(asctime)s - %(name)s - %(levelname)s [%(filename)s:%(lineno)s] - %(message)s',
 datefmt= '%I:%M:%S %p',
 handlers=[
     log.FileHandler('capa_datos.log'),
