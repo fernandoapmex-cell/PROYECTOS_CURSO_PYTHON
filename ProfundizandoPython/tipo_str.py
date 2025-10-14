@@ -124,33 +124,56 @@
 
 #caracteres de escape
 
-resultado = 'Hola \' Mundo'
-print(resultado)
-#borra el caracter detras
-resultado = 'Se va a eliminar el punto.\b\b\b'
-print(resultado)
+# resultado = 'Hola \' Mundo'
+# print(resultado)
+# #borra el caracter detras
+# resultado = 'Se va a eliminar el punto.\b\b\b'
+# print(resultado)
 
 #el caracter de diagonal es para escapar \
-resultado ='c:\\juan\\nuevo'
-print(resultado)
+# resultado ='c:\\juan\\nuevo'
+# print(resultado)
 
 #raw string
 #invalida los caracteres especiales
-resultado=r'Cadena con salto de linea \n \\\\ salto de linea'
-print(resultado)
+# resultado=r'Cadena con salto de linea \n \\\\ salto de linea'
+# print(resultado)
 
 #caracteres unicode
 
-print('Hola\u0020Mundo')
-print('\u0041')
-print('Notacion Extendida en unicode : \U00000041')
-print('Notcacion Hexadecimal','\x41')
-print('Corazon en unicode \u2665')
-print('Cara sonriendo \U0001F600')
-print('Serpiente \U0001F40D')
+# print('Hola\u0020Mundo')
+# print('\u0041')
+# print('Notacion Extendida en unicode : \U00000041')
+# print('Notcacion Hexadecimal','\x41')
+# print('Corazon en unicode \u2665')
+# print('Cara sonriendo \U0001F600')
+# print('Serpiente \U0001F40D')
 
 #ASCII
 
-caracter = chr(65)
-#A Mayuscula
-print(caracter)
+# caracter = chr(65)
+# #A Mayuscula
+# print(caracter)
+
+#caracteres en bytes
+
+# caracteres_bytes=b'Hola Mundo'
+# print(caracteres_bytes)
+#
+# mensaje=b'Universidad Python'
+# print(mensaje[0])
+# print(chr(mensaje[0]))
+#
+# lista_caracteres = mensaje.split()
+# print(lista_caracteres)
+
+#convertir de str a bytes
+
+cadena='Programacion con Python'
+# print(f'String original: {cadena}')
+# #asi se convierte una cadena a bytes
+bytes= cadena.encode('utf-8')
+# print(bytes)
+string2= bytes.decode('utf8')
+print(string2)
+print(cadena == string2)
