@@ -89,5 +89,17 @@ lista_listas.sort(key=len)
 print(f'Lista ordenada: {lista_listas}')
 
 #build in
+#de python sorted lo quehace es ordenar de manera alfaberica con una lista
 nombres=['fernando','carlos','gerardo']
-nombres.sorted(nombres)
+nombres = sorted(nombres)
+print(f'Lista : {nombres}')
+#ordenar de manera decendente
+nombres = sorted(nombres,reverse=True)
+print(f'Lista : {nombres}')
+#ordenar por cantidad de caracteres
+nombres = sorted(nombres,key=len)
+print(f'Lista : {nombres}')
+#biuld in reverse
+nombres= list(reversed(nombres))
+print(f'Lista : {nombres}')
+
