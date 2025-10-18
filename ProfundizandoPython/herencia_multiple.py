@@ -40,15 +40,25 @@ class ListaEnteros(ListaSimple):
         #una vez que ha sido validado lo agregamos a la lista
         super().agregar(elemento)
 
-
-
+#lista de enteros ordenada
+class ListaEnterosOrdenada(ListaEnteros,ListaOrdenado):
+    pass
 # lista_simple=ListaSimple([5,4,6,8])
 # print(lista_simple)
 # lista_ordenada=ListaOrdenado([4,3,6,9,10,-1])
 # print(lista_ordenada)
 # lista_ordenada.agregar(-14)
 # print(lista_ordenada)
-
 #lista de enteros
-lista_enteros=ListaEnteros([2,3,4,2,3])
-print(lista_enteros)
+# lista_enteros=ListaEnteros([2,3,4,2,3])
+# print(lista_enteros)
+
+#lista de enteros ordenada
+lista_enteros_ordenada = ListaEnterosOrdenada(elementos=[4,5,-1,10,14,-4])
+print(lista_enteros_ordenada)
+lista_enteros_ordenada.agregar(-20)
+print(lista_enteros_ordenada)
+#saber las clases padre y su orden
+print(ListaEnterosOrdenada.__bases__)
+#MRO method resolution order
+print(ListaEnterosOrdenada.__mro__)
