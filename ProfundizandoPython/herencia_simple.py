@@ -44,11 +44,19 @@ class ListaEnteros(ListaSimple):
 
 # lista_simple=ListaSimple([5,4,6,8])
 # print(lista_simple)
-# lista_ordenada=ListaOrdenado([4,3,6,9,10,-1])
+lista_ordenada=ListaOrdenado([4,3,6,9,10,-1])
 # print(lista_ordenada)
 # lista_ordenada.agregar(-14)
 # print(lista_ordenada)
 
 #lista de enteros
 lista_enteros=ListaEnteros([2,3,4,2,3])
-print(lista_enteros)
+# print(lista_enteros)
+
+#is instance funciona para ver que tipo de objeto es conforme al MRO
+print('Es entero',isinstance('10',int))
+print('Es cadena',isinstance('str',str))
+print('Es lista de enteros ordenada',isinstance(lista_enteros,ListaEnteros))
+
+#es de varios tipos
+print('Es de varios tipos',isinstance(lista_ordenada,(ListaSimple,ListaOrdenado,ListaEnteros)))
