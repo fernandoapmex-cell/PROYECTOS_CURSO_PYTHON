@@ -112,4 +112,5 @@ class ComponentesVentana(tk.Tk):
 if __name__ == '__main__':
     componentes_ventana = ComponentesVentana()
     componentes_ventana.mainloop()
+    #preubaaaaa
 
