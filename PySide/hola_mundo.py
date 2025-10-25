@@ -1,12 +1,14 @@
 import sys
 
-from PySide6.QtWidgets import QApplication, QWidget
+from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QMainWindow
 
 #Clase Base de QT (PySide)
 #se encarga de manejar y procesar los eventos (event loop)
 app = QApplication()
 # creamos un primer objeto ventana
-ventana = QWidget()
+#cualquier objeto puyede ser una ventana en pyside
+#ventana = QPushButton('Boton de PySide')
+ventana = QMainWindow()
 #cambiamos el titulo de la ventana
 ventana.setWindowTitle("Hola mundo con PySide")
 #modificamos el tamaño de la ventan
