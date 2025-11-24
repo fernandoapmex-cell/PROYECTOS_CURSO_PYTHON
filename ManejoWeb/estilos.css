@@ -1,0 +1,24 @@
+/*Definicion de estilos css en un archivo externo */
+/*estilos externos tercera forma*/
+ body{
+        background-color: black;
+}
+p{
+    color: yellow;
+}
+h3{
+    color: yellow;
+}
+a{
+    color: yellow;
+}
+a:hover{
+    color:green;
+}
+/* Clases o selectores  en CSS*/
+.texto-centrado{
+    text-align:center;
+}
+.titulo{
+    font-size:200%;
+}
